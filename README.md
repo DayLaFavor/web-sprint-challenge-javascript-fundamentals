@@ -29,13 +29,20 @@ Edit this document to include your answers after each question. Make sure to lea
 you use them to change parts of an array, shorten an array, and receive one thing from an array, respectively
 
 2. Explain the difference between a callback and a higher order function.
-
+Higher order functions take another function and uses it as an argument..
+callback function is that function that is passed into a higher order one.
 
 3. Explain what a closure is.
+Closure is what allows you to use an outer function's scope
 
 4. Describe the four principles of the 'this' keyword.
+Window Binding will return the window or undefined if your in strict mode
+Implicit Binding is what the this. points to on the left of the period
+New Binding is when a function is used as a constuctor function
+Explicit Binding is when you define this. using apply or bind
 
 5. Why do we need super() in an extended class?
+It allows inheritence of all parameters of the class it's extending from
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
