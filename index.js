@@ -26,14 +26,14 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(number) {
-  let bunch = [];
-  for(i = 0; i < number + 1; i++){
-    bunch.push[i]
+function summation(number){
+  let count = 0;
+  for (let i = 0; i < number + 1; i++){
+      count = count + number[i];
   }
-  const sum = (item, acc) => item + acc;
-  return sum
+  return count
 }
+console.log(summation(4))
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
 // Given this zoo data from around the United States, follow the instructions below. Use the specific array methods in the requests below to solve the problems.
@@ -117,29 +117,29 @@ const zooAnimals = [
   */
 
   function consume(a, b, cb){
-    /*Your Code Here */
+    
   }
  
   
   /* 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁 */
  // 🦁🦁🦁 Use add to return the sum of two numbers 🦁🦁🦁
   
-function add(/*Your Code Here */){
-    /*Your Code Here*/
+function add(a, b){
+    return a + b;
   }
 
 
 // 🦁🦁🦁 Use multiply to return the product of two numbers 🦁🦁🦁
   
-function multiply(/*Your Code Here */){
-   /*Your Code Here */
+function multiply(a, b){
+   return a * b
   }
 
 
  // 🦁🦁🦁 Use greeting to accept a first and last name and return "Hello {first-name} {last-name}, nice to meet you!" 🦁🦁🦁
   
-function greeting(/*Your Code Here */){
-   return /*Your Code Here */
+function greeting(a, b){
+   return `Hello ${a} ${b}, nice to meet you!`
   }
   
   
@@ -184,7 +184,6 @@ CuboidMaker.prototype.surfaceArea = function(){
 const cuboid = new CuboidMaker(4, 5, 5)
 
 
-
 // 🐴🐴🐴 Test your volume and surfaceArea methods by uncommenting the logs below: 🐴🐴🐴
 // ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️
 console.log(cuboid.volume()); // 100
@@ -207,7 +206,6 @@ class CuboidMakerTwo{
   }
 }
 const cuboidTwo = new CuboidMakerTwo(4, 5, 5)
-
 
 //🦄🦄🦄 Test your volume and surfaceArea methods by uncommenting the logs below: 🦄🦄🦄
 console.log(cuboidTwo.volume()); // 100
