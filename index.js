@@ -117,6 +117,7 @@ const zooAnimals = [
   */
 
   function consume(a, b, cb){
+    return cb(a, b)
     
   }
  
@@ -154,7 +155,6 @@ function greeting(a, b){
 /* 🐴🐴🐴 Step 1: Base Constructor 🐴🐴🐴
  Use the constructor function named CuboidMaker to accept properties for length, width, and height which can be initialized as an object
 */
-//Instructions at line 155 very unclear. had to look at the test code to see that it wanted to pass an object
 
 function CuboidMaker(cuboid){
   this.length = cuboid.length;
@@ -220,7 +220,6 @@ const cuboidTwo = new CuboidMakerTwo({
 //🦄🦄🦄 Test your volume and surfaceArea methods by uncommenting the logs below: 🦄🦄🦄
 console.log(cuboidTwo.volume()); // 100
 console.log(cuboidTwo.surfaceArea()); // 130
-
 
 
 
